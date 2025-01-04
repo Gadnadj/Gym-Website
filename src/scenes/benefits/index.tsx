@@ -1,5 +1,5 @@
 import { SelectedPage, BenefitType } from "@/shared/types";
-import { HomeModernIcon, UserCircleIcon, AcademicCapIcon, UserGroupIcon } from "@heroicons/react/24/solid";
+import { HomeModernIcon, AcademicCapIcon, UserGroupIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import HText from "@/shared/HTest";
 import Benefit from "@/scenes/benefits/Benefits";
