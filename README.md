@@ -1,2 +1,3 @@
 https://evogym-stars.netlify.app/
-(src/assets/home.png)
+![Description de l'image](https://evogym-stars.netlify.app/src/assets/home.png)
+
