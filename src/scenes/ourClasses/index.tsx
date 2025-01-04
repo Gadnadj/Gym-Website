@@ -77,8 +77,8 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                         </p>
                     </div>
                 </motion.div>
-                <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-                    <ul className="w-[2800px] whitespace-nowrap ml-0 flex gap-x-5 scroll-snap-x mandatory"> {/* Ajout de scroll-snap */}
+                <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden relative">
+                    <ul className="w-[2800px] whitespace-nowrap ml-0 flex gap-x-5 scroll-snap-x mandatory">
                         {classes.map((item: ClassType, index) => (
                             <Class
                                 key={`${item.name}-${index}`}
@@ -88,7 +88,11 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                             />
                         ))}
                     </ul>
+                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 text-black text-3xl">
+                        &rarr; {/* Flèche droite */}
+                    </div>
                 </div>
+
 
             </motion.div>
         </section>
