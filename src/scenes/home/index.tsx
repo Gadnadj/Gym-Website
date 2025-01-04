@@ -4,7 +4,7 @@ import { SelectedPage } from '@/shared/types';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import HomePageText from '@/assets/HomePageText.png';
 import HomePageGraphic from '@/assets/HomePageGraphic.png';
-import SponsorRedbull from '@/assets/SponsorRedbull.png';
+import SponsorRedBull from '@/assets/SponsorRedbull.png';
 import SponsorForbes from '@/assets/SponsorForbes.png';
 import SponsorFortune from '@/assets/SponsorFortune.png';
 import { motion } from 'framer-motion';
@@ -90,7 +90,7 @@ const Home = ({ setSelectedPage }: Props) => {
                                 visible: { opacity: 1, x: 0 },
                             }}
                             className='flex w-full items-center justify-between'>
-                            <img src={SponsorRedbull} alt="redbull-sponsor" />
+                            <img src={SponsorRedBull} alt="redbull-sponsor" />
                             <img src={SponsorForbes} alt="forbes-sponsor" />
                             <img src={SponsorFortune} alt="fortune-sponsor" />
                         </motion.div>
