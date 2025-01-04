@@ -77,13 +77,21 @@ const ourClasses = ({ setSelectedPage }: Props) => {
                         </p>
                     </div>
                 </motion.div>
-                <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+                <motion.div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden"
+                    initial='hidden'
+                    whileInView='visible'
+                    viewport={{ once: true, amount: 0.5 }}
+                    transition={{ delay: 0.2, duration: 1 }}
+                    variants={{
+                        hidden: { opacity: 0, x: -50 },
+                        visible: { opacity: 1, x: 0 },
+                    }}>
                     <ul className="w-[2800px] whitespace-nowrap">
                         {classes.map((item, index) => (
                             <Class key={`${item.name}-${index}`} name={item.name} description={item.description} image={item.image} />
                         ))}
                     </ul>
-                </div>
+                </motion.div>
             </motion.div>
         </section>
     )
