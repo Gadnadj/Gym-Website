@@ -46,9 +46,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                         <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
                     </HText>
                     <p className="my-5">
-                        Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-                        sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-                        adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+                        Take the first step towards achieving your fitness goals.
+                        Reach out to us today to learn more about our programs, trainers, and facilities.
                     </p>
                 </motion.div>
 
