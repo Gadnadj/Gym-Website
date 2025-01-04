@@ -1,6 +1,6 @@
 # EvoGym Stars
 
-Welcome to **EvoGym Stars**, your ultimate fitness platform! Visit our website online here: [https://evogym-stars.netlify.app/](https://evogym-stars.netlify.app/)
+Welcome to **EvoGym**, your ultimate fitness platform! Visit our website online here: [https://evogym-stars.netlify.app/](https://evogym-stars.netlify.app/)
 
 ## Preview of Our Website
 
