@@ -12,19 +12,19 @@ const benefits: Array<BenefitType> = [
     {
         icon: <HomeModernIcon className="h-6 w-6" />,
         title: "State of the Art Facilities",
-        description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et..",
+        description: "Our gym is equipped with cutting-edge technology and modern amenities to provide the best workout experience.",
     },
     {
         icon: <UserGroupIcon className="h-6 w-6" />,
         title: "100's of Diverse Classes",
-        description: "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac tyrpis id.",
+        description: "We offer a wide variety of classes for all skill levels, ensuring everyone finds something they love.",
     },
     {
         icon: <AcademicCapIcon className="h-6 w-6" />,
         title: "Expert and Pro Trainers",
-        description: "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+        description: "Our certified trainers are dedicated to helping you achieve your fitness goals through personalized guidance.",
     },
-]
+];
 
 const container = {
     hidden: {},
@@ -110,16 +110,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                 visible: { opacity: 1, x: 0 },
                             }}
                         >
-                            <p className="my-5">Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                                Felis orci diam odio.</p>
-                            <p className="mb-5">Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                                enim mattis odio in risus nunc.</p>
+                            <p className="my-5">Our members have transformed their lives through our expert guidance and state-of-the-art facilities. Join a community that supports your journey to better health and fitness..</p>
+                            <p className="mb-5">From personalized training plans to diverse classes, we ensure you have everything you need to succeed. Become a part of a fitness culture that prioritizes results and well-being.</p>
                         </motion.div>
 
                         {/* Button */}
