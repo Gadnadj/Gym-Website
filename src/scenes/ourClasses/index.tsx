@@ -88,7 +88,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                             />
                         ))}
                     </ul>
-                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 text-primary-500 text-5xl">
+                    <div className="absolute right-2 top-1/2 transform -translate-y-1/2 text-primary-500 text-5xl md:hidden">
                         &rarr; {/* Flèche droite */}
                     </div>
                 </div>
