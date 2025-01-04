@@ -1,7 +1,33 @@
-import { SelectedPage } from "@/shared/types";
-import { HomeModernIcon, UserCircleIcon, AcademicCapIcon } from "@heroicons/react/24/solid";
+import { SelectedPage, BenefitType } from "@/shared/types";
+import { HomeModernIcon, UserCircleIcon, AcademicCapIcon, UserGroupIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import HText from '@/shared/HTest';
+import HText from "@/shared/HTest";
+import Benefit from "@/scenes/benefits/Benefits";
+
+const benefits: Array<BenefitType> = [
+    {
+        icon: <HomeModernIcon className="h-6 w-6" />,
+        title: "State of the Art Facilities",
+        description: "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et..",
+    },
+    {
+        icon: <UserGroupIcon className="h-6 w-6" />,
+        title: "100's of Diverse Classes",
+        description: "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac tyrpis id.",
+    },
+    {
+        icon: <AcademicCapIcon className="h-6 w-6" />,
+        title: "Expert and Pro Trainers",
+        description: "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+    },
+]
+
+const container = {
+    hidden: {},
+    visible: {
+        transition: { staggerChildren: 0.2 }
+    }
+}
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -25,9 +51,14 @@ const Benefits = ({ setSelectedPage }: Props) => {
                 </div>
 
                 {/* Benefits */}
-                <div className="md:flex items-center justify-between gap-8 mt-5">
-                    
-                </div>
+                <motion.div
+                    initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} variants={container}
+
+                    className="md:flex items-center justify-between gap-8 mt-5">
+                    {benefits.map((benefit: BenefitType) => (
+                        <Benefit key={benefit.title} icon={benefit.icon} title={benefit.title} description={benefit.description} setSelectedPage={setSelectedPage} />
+                    ))}
+                </motion.div>
             </motion.div>
         </section>
     )
